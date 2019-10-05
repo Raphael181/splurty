@@ -85,5 +85,5 @@ production:
   <<: *default
   database: splurty_production
  #username: splurty
- # password: <%= ENV['SPLURTY_DATABASE_PASSWORD'] %>
+ #splurty password: <%= ENV['SPLURTY_DATABASE_PASSWORD'] %>
   
