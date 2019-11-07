@@ -3,11 +3,7 @@ class QuotesController < ApplicationController
  @quote = Quote.order("RANDOM()").first
  end
  
- def new
-  @quote = Quote.new
- end
-end
-   
+
 def create
        @quote =  Quote.create(quote_params)
         if @quote.invalid?
@@ -25,3 +21,4 @@ def quote_params
       params.require(:quote).permit(:saying, :author)
 end
 
+end
